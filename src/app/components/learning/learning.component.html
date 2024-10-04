@@ -1,0 +1,43 @@
+<!-- course.component.html -->
+<div>
+    <h1>Course: {{ course.name }}</h1>
+    <h2>ID: {{ course.id }}</h2>
+    <h2>Students:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Identification</th>
+          <th>Name</th>
+          <th>Surname</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ course.students[0].id }}</td>
+          <td>{{ course.students[0].identification }}</td>
+          <td>{{ course.students[0].name }}</td>
+          <td>{{ course.students[0].surname }}</td>
+        </tr>
+        <tr>
+          <td>{{ course.students[1].id }}</td>
+          <td>{{ course.students[1].identification }}</td>
+          <td>{{ course.students[1].name }}</td>
+          <td>{{ course.students[1].surname }}</td>
+        </tr>
+        <tr>
+          <td>{{ course.students[2].id }}</td>
+          <td>{{ course.students[2].identification }}</td>
+          <td>{{ course.students[2].name }}</td>
+          <td>{{ course.students[2].surname }}</td>
+        </tr>
+        <tr>
+          <td>{{ course.students[3].id }}</td>
+          <td>{{ course.students[3].identification }}</td>
+          <td>{{ course.students[3].name }}</td>
+          <td>{{ course.students[3].surname }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,16 @@
+<table class="table table-striped mt-3">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Identification</th>
+            <th>Name</th>
+            <th>Surname</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (student of students; track $index)
+        {
+            <tr app-studentsrow [student]="student"></tr>
+        }
+    </tbody>
+</table>

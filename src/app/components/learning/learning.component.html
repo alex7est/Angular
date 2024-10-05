@@ -1,48 +1,5 @@
 <!-- course.component.html -->
-<div class="container my-4 w-50">
-  <div class="card">
-    <div class="card-header bg-primary text-white">
-      <h1 class="h3">Course: {{ course.name }}</h1>
-    </div>
-    <div class="card-body">
-      <h2 class="h5">ID: {{ course.id }}</h2>
-      <h2 class="h5 mt-4">Students:</h2>
-      <table class="table table-striped mt-3">
-        <thead class="thead-dark">
-          <tr>
-            <th>ID</th>
-            <th>Identification</th>
-            <th>Name</th>
-            <th>Surname</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ course.students[0].id }}</td>
-            <td>{{ course.students[0].identification }}</td>
-            <td>{{ course.students[0].name }}</td>
-            <td>{{ course.students[0].surname }}</td>
-          </tr>
-          <tr>
-            <td>{{ course.students[1].id }}</td>
-            <td>{{ course.students[1].identification }}</td>
-            <td>{{ course.students[1].name }}</td>
-            <td>{{ course.students[1].surname }}</td>
-          </tr>
-          <tr>
-            <td>{{ course.students[2].id }}</td>
-            <td>{{ course.students[2].identification }}</td>
-            <td>{{ course.students[2].name }}</td>
-            <td>{{ course.students[2].surname }}</td>
-          </tr>
-          <tr>
-            <td>{{ course.students[3].id }}</td>
-            <td>{{ course.students[3].identification }}</td>
-            <td>{{ course.students[3].name }}</td>
-            <td>{{ course.students[3].surname }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<div class="card my-4 w-50">
+  <app-header [name]="course.name"></app-header>
+  <app-body [id]="course.id" [students]="course.students"></app-body>
 </div>
